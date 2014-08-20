@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AFEB2B515954182002D9D3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEB2B415954182002D9D3C /* Foundation.framework */; };
+		0AFEB2B815954182002D9D3C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFEB2B715954182002D9D3C /* main.m */; };
+		0AFEB2BC15954182002D9D3C /* iOSApiTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0AFEB2BB15954182002D9D3C /* iOSApiTest.1 */; };
+		0AFEB2CD15954C0B002D9D3C /* iOSApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFEB2CC15954C0B002D9D3C /* iOSApi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AFEB2AE15954182002D9D3C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				0AFEB2BC15954182002D9D3C /* iOSApiTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AFEB2B015954182002D9D3C /* iOSApiTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iOSApiTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFEB2B415954182002D9D3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AFEB2B715954182002D9D3C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AFEB2BA15954182002D9D3C /* iOSApiTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSApiTest-Prefix.pch"; sourceTree = "<group>"; };
+		0AFEB2BB15954182002D9D3C /* iOSApiTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = iOSApiTest.1; sourceTree = "<group>"; };
+		0AFEB2CC15954C0B002D9D3C /* iOSApi.framework */ = {isa = PBXFileReference; lastKnownFileType = file; name = iOSApi.framework; path = "../build/Release-iphoneos/iOSApi.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AFEB2AD15954182002D9D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFEB2CD15954C0B002D9D3C /* iOSApi.framework in Frameworks */,
+				0AFEB2B515954182002D9D3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFEB2A515954182002D9D3C = {
+			isa = PBXGroup;
+			children = (
+				0AFEB2B615954182002D9D3C /* iOSApiTest */,
+				0AFEB2B315954182002D9D3C /* Frameworks */,
+				0AFEB2B115954182002D9D3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AFEB2B115954182002D9D3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AFEB2B015954182002D9D3C /* iOSApiTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AFEB2B315954182002D9D3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AFEB2CC15954C0B002D9D3C /* iOSApi.framework */,
+				0AFEB2B415954182002D9D3C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AFEB2B615954182002D9D3C /* iOSApiTest */ = {
+			isa = PBXGroup;
+			children = (
+				0AFEB2B715954182002D9D3C /* main.m */,
+				0AFEB2BB15954182002D9D3C /* iOSApiTest.1 */,
+				0AFEB2B915954182002D9D3C /* Supporting Files */,
+			);
+			path = iOSApiTest;
+			sourceTree = "<group>";
+		};
+		0AFEB2B915954182002D9D3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AFEB2BA15954182002D9D3C /* iOSApiTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AFEB2AF15954182002D9D3C /* iOSApiTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFEB2BF15954182002D9D3C /* Build configuration list for PBXNativeTarget "iOSApiTest" */;
+			buildPhases = (
+				0AFEB2AC15954182002D9D3C /* Sources */,
+				0AFEB2AD15954182002D9D3C /* Frameworks */,
+				0AFEB2AE15954182002D9D3C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSApiTest;
+			productName = iOSApiTest;
+			productReference = 0AFEB2B015954182002D9D3C /* iOSApiTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AFEB2A715954182002D9D3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 0AFEB2AA15954182002D9D3C /* Build configuration list for PBXProject "iOSApiTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AFEB2A515954182002D9D3C;
+			productRefGroup = 0AFEB2B115954182002D9D3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AFEB2AF15954182002D9D3C /* iOSApiTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AFEB2AC15954182002D9D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFEB2B815954182002D9D3C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0AFEB2BD15954182002D9D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0AFEB2BE15954182002D9D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0AFEB2C015954182002D9D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/iOSApi-gnwqhrgzfaejuxgpnlpzgqawjizu/Build/Products/Debug-iphoneos\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSApiTest/iOSApiTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/iOSApi-gnwqhrgzfaejuxgpnlpzgqawjizu/Build/Products/Debug-iphoneos\"";
+			};
+			name = Debug;
+		};
+		0AFEB2C115954182002D9D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/iOSApi-gnwqhrgzfaejuxgpnlpzgqawjizu/Build/Products/Debug-iphoneos\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSApiTest/iOSApiTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../../../../Library/Developer/Xcode/DerivedData/iOSApi-gnwqhrgzfaejuxgpnlpzgqawjizu/Build/Products/Debug-iphoneos\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AFEB2AA15954182002D9D3C /* Build configuration list for PBXProject "iOSApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFEB2BD15954182002D9D3C /* Debug */,
+				0AFEB2BE15954182002D9D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFEB2BF15954182002D9D3C /* Build configuration list for PBXNativeTarget "iOSApiTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFEB2C015954182002D9D3C /* Debug */,
+				0AFEB2C115954182002D9D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AFEB2A715954182002D9D3C /* Project object */;
+}

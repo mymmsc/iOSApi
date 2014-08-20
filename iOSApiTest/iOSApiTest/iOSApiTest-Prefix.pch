@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iOSApiTest' target in the 'iOSApiTest' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

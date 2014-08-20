@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'libiOSApi' target in the 'libiOSApi' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
