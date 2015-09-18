@@ -182,7 +182,7 @@
     } else {
         static NSString *identifier = @"Cell";
         
-        int pos = [indexPath row];
+        int pos = (int)[indexPath row];
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if (cell == nil) {
             cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier] autorelease];

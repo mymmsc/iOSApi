@@ -90,7 +90,7 @@
 	NSMutableArray *array = [[NSMutableArray alloc] init];
 	for (NSUInteger i = 0; i < [GIF_frames count]; i++)
 	{		
-		[array addObject: [self getFrameAsImageAtIndex:i]];
+		[array addObject: [self getFrameAsImageAtIndex:(int)i]];
 	}
 	
 	NSMutableArray *overlayArray = [[NSMutableArray alloc] init];
@@ -274,7 +274,7 @@
 	
     // Copy the read bytes into a local buffer on the stack
     // For easy byte access in the following lines.
-    int length = [GIF_buffer length];
+    int length = (int)[GIF_buffer length];
 	unsigned char aBuffer[length];
 	[GIF_buffer getBytes:aBuffer length:length];
 	
@@ -469,7 +469,7 @@
         
 		if (u != 0x00)
         {
-			[self GIFGetBytes:u];
+			[self GIFGetBytes:(int)u];
 			[GIF_string appendData: GIF_buffer];
         }
         else

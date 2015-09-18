@@ -21,7 +21,7 @@
     NSString *path = @"";
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSArray *tmpPaths = [filename componentsSeparatedByString:@"/"];
-    int count = tmpPaths.count;
+    int count = (int)tmpPaths.count;
     if (count > 1) {
         // 检查目录
         path = [NSString stringWithFormat:@"%@/%@", documentsDirectory, [[tmpPaths subarrayWithRange:NSMakeRange(0, count -1)] componentsJoinedByString:@"/"]];
@@ -67,7 +67,7 @@
     BOOL bRet = [mgr removeItemAtPath:filePath error:&error];
     if (!bRet && error != nil) {
         // 异常
-        iOSLog(@"删除文件[%@] 异常: [%d]%@", filename, [error code], [error localizedDescription]);
+        iOSLog(@"删除文件[%@] 异常: [%ld]%@", filename, (long)[error code], [error localizedDescription]);
     }
     
     return bRet;
@@ -84,7 +84,7 @@
     fileAttributes = [fileManager attributesOfItemAtPath:filename error:&error];
     if (error != nil) {
         // 异常
-        iOSLog(@"读取文件[%@]属性 异常: [%d]%@", filename, [error code], [error localizedDescription]);
+        iOSLog(@"读取文件[%@]属性 异常: [%ld]%@", filename, (long)[error code], [error localizedDescription]);
     }
     return fileAttributes;
 }
@@ -124,7 +124,7 @@
     bRet = [fileManager setAttributes:attributes ofItemAtPath:filePath error:&error];
     if (!bRet) {
         // 异常
-        iOSLog(@"修改文件[%@]最后修改日期异常: [%d]%@", filename, [error code], [error localizedDescription]);
+        iOSLog(@"修改文件[%@]最后修改日期异常: [%ld]%@", filename, (long)[error code], [error localizedDescription]);
     }
     return bRet;
 }

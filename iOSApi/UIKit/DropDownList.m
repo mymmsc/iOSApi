@@ -170,7 +170,7 @@
     _selectedText = [_resultList objectAtIndex:[indexPath row]];
 	[delegate passValue:_selectedText];
     if([delegate respondsToSelector:@selector(dropDown:index:)]){
-        [delegate dropDown:self index:indexPath.row];
+        [delegate dropDown:self index:(int)indexPath.row];
     }
 }
 

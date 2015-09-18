@@ -82,7 +82,7 @@
 
 - (void)tabSelected:(iOSTab *)sender {
     int a = 10;
-    a=[self.tabs indexOfObject:sender];
+    a=(int)[self.tabs indexOfObject:sender];
 	[self.delegate tabBar:self didSelectTabAtIndex:a];
 }
 

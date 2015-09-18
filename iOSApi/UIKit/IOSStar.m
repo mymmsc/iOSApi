@@ -55,7 +55,7 @@
     if (value < 0) {
         value = 0;
     } else if (value > max_star) {
-        value = max_star;
+        value = (int)max_star;
     }
     show_star = value;
     if ([delegate respondsToSelector:@selector(star:onChange:)]) {
@@ -74,7 +74,7 @@
         }
         show_star = (NSInteger)(100.0f * pt.x / starSize.width);
         [self setNeedsDisplay];
-        [self onChangeValue:show_star];
+        [self onChangeValue:(int)show_star];
     }
 }
 
@@ -89,7 +89,7 @@
         }
         show_star = (NSInteger)(100.0f * pt.x / starSize.width);
         [self setNeedsDisplay];
-        [self onChangeValue:show_star];
+        [self onChangeValue:(int)show_star];
     }
 }
 

@@ -115,7 +115,7 @@
     
     if (data != nil && data.length > 0) {
         iOSLog(@"POST 方法");
-        NSString *body_length = [NSString stringWithFormat:@"%d",[data length]];
+        NSString *body_length = [NSString stringWithFormat:@"%lu",(unsigned long)[data length]];
         [request setValue:body_length forHTTPHeaderField:@"Content-Length"];
         [request setHTTPBody:data];
         [request setHTTPMethod:@"POST"];
@@ -147,11 +147,11 @@
     if (timer.isValid) {
         [timer invalidate];
     }
-    statusCode = response.statusCode;
+    statusCode = (int)response.statusCode;
     statusDescription = [NSHTTPURLResponse localizedStringForStatusCode:statusCode];
-    iOSLog(@"%@ 请求: status=%d", [request URL], response.statusCode);
+    iOSLog(@"%@ 请求: status=%ld", [request URL], response.statusCode);
     if (response == nil || response.statusCode >= 400 ) {
-        iOSLog(@"%@ 异常: [%d]%@", [request URL], [error code], [error localizedDescription]);
+        iOSLog(@"%@ 异常: [%d]%@", [request URL], (int)[error code], [error localizedDescription]);
     } else {
         NSHTTPCookieStorage *cookieJar = [NSHTTPCookieStorage sharedHTTPCookieStorage];
         for (NSHTTPCookie *cookie in [cookieJar cookies]) {

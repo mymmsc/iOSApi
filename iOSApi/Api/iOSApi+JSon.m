@@ -106,7 +106,7 @@
 
 + (NSString *)listString:(NSArray *)array toLower:(BOOL)toLower{
     NSMutableString *buff = [NSMutableString stringWithCapacity:0];
-    int count = array.count;
+    int count = (int)array.count;
     for (int i = 0; i < count; i++) {
         id obj = [array objectAtIndex:i];
         NSString *value = [self jsonString:obj toLower:YES];

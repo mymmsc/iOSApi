@@ -21,7 +21,7 @@
     NSString *sRet = nil;
     const char *s = [input UTF8String];
     
-    int s_len = [input length];
+    int s_len = (int)[input length];
     
     //转换到base64
     char *dst = (char *)malloc(s_len * 4);
@@ -37,7 +37,7 @@
 + (NSData *)base64Decode:(NSString *)input {
     NSData *dRet = nil;
     const char *s = [input UTF8String];
-    int s_len = [input length];
+    int s_len = (int)[input length];
     unsigned char *dst = (unsigned char *)malloc(s_len);
     memset(dst, 0x00, s_len);
     

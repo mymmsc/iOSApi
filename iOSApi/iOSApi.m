@@ -262,7 +262,7 @@
     //static char O3CHARS_EXT[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_ []{}<>~`+=,.;:/?|";
     [self randomize];
     char temp[1025];
-    int max = strlen(O3CHARS);
+    int max = (int)strlen(O3CHARS);
     if (length > 1024) {
         length = 1024;
     }
@@ -278,7 +278,7 @@
 {
     const char *cStr = [str UTF8String];
     unsigned char result[16];
-    CC_MD5( cStr, strlen(cStr), result ); // This is the md5 call
+    CC_MD5( cStr, (unsigned int)strlen(cStr), result ); // This is the md5 call
     return [NSString stringWithFormat:
 			@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
 			result[0], result[1], result[2], result[3], 
